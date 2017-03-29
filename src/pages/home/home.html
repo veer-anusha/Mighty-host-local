@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="signup-background">
+    
+    <!--<ion-list>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+            {{ item.text}}
+        </button>  
+</ion-list>-->
+      <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button (click)="openPage(LoginPage)" value="login">
+        Login
+      </ion-segment-button>
+      <ion-segment-button (click)="openPage1(SignupPage)" value="signup">
+        Signup
+      </ion-segment-button>
+      <ion-segment-button (click)="openPage2(RentCarPage)"value="rent">
+        Rent a Car
+      </ion-segment-button>
+        <ion-segment-button (click)="openPage3(ListCarPage)" value="list">
+        List a Car
+      </ion-segment-button>
+    </ion-segment>
+</ion-toolbar>
+    <div></div>
+    <div></div>
+    <div></div>
+ 
+     
+     <!--  <div class="button-bar">
+      <button ion-item (click)="openPage(LoginPage)" class="button button-small">
+        Login
+      </button>
+      <button ion-item (click)="openPage1(SignupPage)">
+        Signup
+      </button>
+          <button ion-item (click)="openPage2(RentCarPage)">
+        Rent a Car
+      </button>
+         <button ion-item (click)="openPage3(ListCarPage)">
+        List your Car
+      </button>
+    </div>-->
+    
+    <h1>&nbsp;Own the Adventure</h1>
+    
+     <ion-searchbar placeholder="Where are you travelling?" (ionInput)="getItems($event)"></ion-searchbar>
+  
+</ion-content>
+   
+
